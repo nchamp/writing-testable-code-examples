@@ -1,10 +1,10 @@
-import { UserFetcher } from '../repos/better-user-repo';
+import { UserFetcherInterface } from '../repos/better-user-repo';
 import { Request, ResponseToolkit, ResponseObject } from '@hapi/hapi';
 
 export class UserController {
-    private userRepo: UserFetcher;
+    private userRepo: UserFetcherInterface;
 
-    constructor(userRepo: UserFetcher) {
+    constructor(userRepo: UserFetcherInterface) {
         this.userRepo = userRepo;
     }
 

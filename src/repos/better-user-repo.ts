@@ -1,8 +1,8 @@
-export interface UserFetcher {
+export interface UserFetcherInterface {
     getUsers(): Promise<object[]>
 }
 
-class UserRepo implements UserFetcher {
+class UserRepo implements UserFetcherInterface {
     getUsers(): Promise<object[]> {
         const users = [
             { name: 'Fred Flinstone' },

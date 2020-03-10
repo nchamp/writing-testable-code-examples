@@ -1,8 +1,8 @@
 import { UserController } from '../src/controllers/betterer-user-controller';
-import { UserFetcher } from '../src/repos/better-user-repo'
+import { UserFetcherInterface } from '../src/repos/better-user-repo'
 import { Request, ResponseToolkit } from '@hapi/hapi';
 
-class MockUserRepo implements UserFetcher {
+class MockUserRepo implements UserFetcherInterface {
     getUsers(): Promise<object[]> {
         return Promise.resolve([
             { name: 'Homer Simpson' },
