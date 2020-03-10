@@ -1,0 +1,31 @@
+{
+  "name": "writing-testable-code-examples",
+  "version": "0.1.0",
+  "test": "jest.config.js",
+  "engine": {
+    "node": ">=12.13.0"
+  },
+  "scripts": {
+    "start": "tsc --project tsconfig.json && node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "service",
+    "node",
+    "starter",
+    "pack"
+  ],
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/hapi__hapi": "^19.0.2",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.0",
+    "env-cmd": "^8.0.2",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.0.2"
+  }
+}
